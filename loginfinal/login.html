@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<link rel="icon" href="logo.png">
+	<link id="link" rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery.min.js"></script>
+	<script>
+		function secondtheme() {
+			document.getElementById("link").href = "style1.css";
+			var script = document.createElement("script");
+		    script.type = "text/javascript";
+		    script.src = "jquery.js"; 
+		    document.getElementsByTagName("head")[0].appendChild(script);
+		    return false;
+		}		
+	</script>
+	<style>
+		body {
+			background:url(bg1.jpeg);
+			background-blend-mode: screen;
+		}
+ 	</style>
+</head>
+<body>
+	<button onclick="secondtheme()" id="Dark" class="themebuttons">Second Theme</button>
+	<br>
+	<button style="margin-top:10px;" onclick="window.location.reload();" class="themebuttons">Main Theme</button>
+	<div class="logindiv"> 
+		<img src="logo.png" id="logo">
+		<p id= "signin">Sign In</p>
+		<form style="margin-left:50px;">
+			<input class="demo" type="text" name="email" placeholder="E-mail">
+			<br>
+			<input type="password" name="pw" placeholder="Password">
+			<br>
+			<a href="#" id="a1">Forgot your Password ?</a>
+			<br>
+			<button id="button1">Sign In</button>
+			<hr id="hr1"><hr id="hr2">
+			<p id="or">or</p>
+			<button id="facebook"><img id="fblogo" src="fp2.png" alt="facebook">Sign in using Facebook</button>
+			<button id="gmail"><img id="gmaillogo" src="gmail.png" alt="gmail">Sign in using Gmail</button>
+			<button id="twitter"><img id="twitterlogo" src="twitterpngwhite.png" alt="twitter">Sign in using Twitter</button>
+			<hr id="hr3"><p id="dont">Don't have an account ?</p><hr id="hr4">
+			<button id="button2"><a id="create" href="../signupfinal\signup.html">Create an Account</a></button>
+		</form>
+	</div>
+</body>
+</html>

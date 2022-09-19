@@ -1,0 +1,668 @@
+		body {
+    		background-color:whitesmoke!important;
+    	}
+		*{
+			padding: 0;
+			font-family: arial;
+			margin: 0;
+			font-size: 16px;
+		}
+		.logo img{
+			width: 135px;
+			position: absolute;
+			top: -15%;
+			left: 44%;
+		}
+		#logowhite {
+			width:160px;
+		}
+		.navbar-nav{
+			margin: 140px auto;
+		}
+		.nav-link{
+			color: #000;
+		}
+		.nav-item a{
+			transition: 0.3s all;
+			border-radius: 40px;
+			margin-right: 20px;
+			border:1px solid transparent;
+			border-radius: 60px;
+			padding: 10px 20px;
+		}
+		.nav-item a:hover{
+			background-color:#32ff7e;
+			color: #fff;
+			border-radius: 40px;
+		}
+		.nav-item .active{
+			background-color:#32ff7e;
+			color: #fff;
+			padding: 10px;
+		}
+		h3 {
+
+    		font-family:Georgia;
+    		color:#d800ff;
+    		text-shadow: 1px 1px black;
+    		font-style: italic;
+    	}
+    	h3:first-letter {
+    		font-size: 200%;
+    	}
+    	p {
+    		font-family: Georgia;
+    	}
+
+    	p:first-letter {
+    		font-size: 120%;
+    	}
+    	#vitamine {
+			font-style: italic;
+			color:cyan;
+			text-shadow: 1px 1px black;
+		}
+    	.afternav {
+    		background-color:white;
+    		margin:auto;
+    		margin-top:20px;
+    		width:75%;
+    		padding:55px;
+    		overflow:hidden;
+    	}
+    	.cardcontainer {
+    		height:500px;
+    		width:70%;
+    	}
+    	.card {
+			width:100%;
+			height: 500px;
+			text-align: center;
+			transition: transform 0.8s;
+			transform-style: preserve-3d;
+			border:0.5px solid black;
+    	}
+    	.cardcontainer:hover .card {
+			transform: rotateY(180deg);
+		}
+		.front, .back {
+			position: absolute;
+		    width: 100%;
+			height: 500px;
+			backface-visibility: hidden;
+		}
+    	.front img {
+    		width:100%;
+    		height:498px;
+    		filter:blur(1px);
+    	}
+    	.front h3 {
+    		position:absolute;
+    		top:50%;
+    		left:50%;
+    		transform: translate(-50%,-50%);
+    		z-index:2;
+    		font-size: 120%;
+    		color:white;
+    	}
+    	.back {
+    		background-color: forestgreen;
+  			transform: rotateY(180deg);
+    	}
+    	.back p {
+    		color:white;
+    		text-shadow: 0px 1px black;
+    		font-family: Georgia;
+    		font-size: 80%;
+    		padding:13px 20px;
+    	}
+    	label {
+    		font-size: 120%;
+    	}
+    	table {
+		    font-family: Georgia;
+		    border-collapse: collapse;
+		    width: 80%;
+		    color:#0d7f7f;
+		}
+
+		td, th {
+		    border: 1px solid #dddddd;
+		    text-align: left;
+		    padding: 8px;
+		}
+		tr:nth-child(even) {
+		    background-color: whitesmoke;
+		}
+		td:hover  {
+			background-color: #adadad;
+		}
+		#box1 p , #box2 p , #box3 p , #box4 p {
+			font-family: Georgia;
+			color:white;
+			text-shadow: 1px 0px black;
+			padding-top:149px;
+			text-align:center;
+			font-size:80%;
+			padding-left:2px;
+			padding-right:2px;
+			line-height: 17px;
+	    }
+		#box1 {
+			width:250px;
+			height:280px;
+			position: absolute;
+			top:230%;
+			left:75%;
+			transform: translate(-50%,-50%);
+			background:url(carrot1.jpg);
+			border:1px solid black;
+			background-position: top;
+			background-size:105%;
+			background-repeat: no-repeat;
+			background-color:black;
+	    }
+	    .circle1 {
+			width:200px;
+			height:210px;
+			position: absolute;
+			top:213%;
+			left:68%;
+			transform: translate(-50%,-50%);
+			z-index: 1;
+			display:block;
+	    }
+	    .circle2 {
+			width:200px;
+			height:210px;
+			position: absolute;
+			top:213%;
+			left:68%;
+			transform: translate(-50%,-50%);
+			z-index: 1;
+			display:block;
+	    }
+	    #carrotbutton {
+		    position: absolute;
+			top:200%;
+			left:69%;
+			transform: translate(-50%,-50%);
+			border: 1px solid green;
+			background : transparent;
+			width:180px;
+			height:40px;
+			color:green;
+			font-family: Georgia;
+			border-radius: 10px;
+			transition: 0.5s background-color;
+			transform: skewX(-10deg);
+			outline:none;
+	    }
+	    #carrotbutton:hover {
+	    	color:white;
+	    	background-color:green;
+	    	box-shadow: 0px 0px 20px 10px cyan;
+	    }
+	    #carouselExampleCaptions img {
+	    	height:600px;
+	    	margin:auto;
+	    	filter:blur(1px);
+	    }
+	    .divtocentercar {
+	    	padding: 0 150px;
+	    }
+	    .divtocentercar p , .divtocentercar h5 {
+	    	text-shadow: 1px 1px black;
+	    }
+	    #pyramidmap {
+	    	margin:auto;
+	    	width:40%;
+	    }
+	    #map {
+	    	width:100%;
+	    }
+	    #aftermap {
+	    	margin:auto;
+	    	width:35%;
+	    	border:0.5px solid black;
+	    	height:230px;
+	    	min-height: 230px;
+	    	background-color:black;
+	    }
+	    .mapphotos {
+	    	width:100%;
+	    	height:100%;
+	    	display:none;
+
+	    }
+	    #h5onaftermap {
+	    	font-family: Georgia;
+	    	text-align: center;
+	    	padding-top:100px;
+	    	color:white;
+	    	font-size: 90%;
+	    	text-shadow: 1px 0px black;
+	    }
+	    .hide {
+	    	display:none;
+	    }
+	    #divgif {
+	    	margin:60px;
+	    	height:60%; 
+	    	width:40%;
+	    	border:0.5px solid black;
+	    }
+	    #divgif img {
+	    	width:100%;
+	    	height: 100%;
+	    }
+	    #lemondis {
+	    	position: absolute;
+	    	margin-left:390px;
+	    	margin-top:300px;
+	    	z-index: 2;
+	    	width:33%;
+	    	height:22%;
+	    	background-color:#ffde50;
+	    	padding:5px;
+	    	border:1px solid black;
+	    	line-height: 5px;
+	    	background:url(lemon.jpg);
+	    	font-family: Georgia;
+	    	color:white;
+	    	text-shadow: 1px 0px black;
+	    	font-style: italic;
+	    	padding-left:15px;
+	    }
+	    #divgif2 {
+	    	float:right;
+	    	margin:60px;
+	    	margin-top: 40px;
+	    	height:60%; 
+	    	width:40%;
+	    	border:0.5px solid black;
+	    }
+	    #divgif2 img {
+	    	width:100%;
+	    	height: 100%;
+	    }
+	    #chocodis {
+	    	position: absolute;
+	    	margin-left:180px;
+	    	margin-top:290px;
+	    	z-index: 2;
+	    	width:33%;
+	    	height:22%;
+	    	background-color:#ffde50;
+	    	padding:5px;
+	    	border:1px solid black;
+	    	line-height: 5px;
+	    	background:url(hotchoco.jpg);
+	    	font-family: Georgia;
+	    	color:white;
+	    	text-shadow: 1px 0px black;
+	    	font-style: italic;
+	    	padding-left:15px;
+	    	background-size: cover;
+	    }
+	    #social-media
+		{
+			background: white;
+		 	padding:20px 0 10px;margin-top: 5px;
+		}
+		#social-media p{
+			font-size: 36px;
+			font-weight: 600;
+			margin-bottom: 20px;	
+		}
+		.social-icons img{
+			width: 60px;
+			transition: 0.5s;
+		}
+		.social-icons a:hover img{
+			transform: translateY(-10px);
+		}
+		.btns2
+		{
+			margin: 30px auto 10px;
+		}
+		.btns2 a
+		{
+			text-decoration: none;
+			color: #32ff7e;
+			border: 3px solid #32ff7e;
+			border-radius: 60px;
+			padding: 10px 40px;
+			transition: 0.3s;
+		}
+		.btns2 a:hover
+		{
+			text-decoration: none;
+			color: #fff;
+			background: #32ff7e;
+		}
+		*, *:before, *:after {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body, input {
+			font-size: 1em;
+			line-height: 1.5;
+		}
+		input {
+			display: block;
+			margin-bottom: 1.5em;
+		}
+		#l1 {
+			padding: 1.5em 0 0 0;
+			text-align: center;
+			position: fixed;
+			left: 3%;
+			bottom: 3%;
+		}
+		#l2 {
+			padding: 1.5em 0 0 0;
+			text-align: center;
+			position: fixed;
+			left: 3%;
+			bottom: 13%;
+		}
+		.l {
+			background-color: rgba(0,0,0,0.7);
+			border-radius: 1.75em;
+			box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
+			color: #fdea7b;
+			display: inline-flex;
+			align-items: center;
+			margin: auto;
+			padding: 0.15em;
+			width: 5em;
+			height: 2.5em;
+			transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+		.l:before, .l:after {
+			content: "";
+			display: block;
+		}
+		.l:before {
+			background-color: #d7d7d7;
+			border-radius: 50%;
+			width: 2.2em;
+			height: 2.2em;
+			transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+			z-index: 1;
+		}
+		.l:after {
+			background:
+				linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
+				repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+				radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+			background-repeat: no-repeat;
+			border: 0.25em solid transparent;
+			border-left: 0.4em solid #d8d8d8;
+			border-right: 0 solid transparent;
+			transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+			transform: translateX(-22.5%);
+			transform-origin: 25% 50%;
+			width: 1.8em;
+			height: 1.5em;
+		}
+		}
+		/* Checked */
+		.l:checked {
+			background-color: rgba(0,0,0,0.45);
+			box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+		}
+		.l:checked:before {
+			background-color: currentColor;
+			transform: translateX(125%);
+		}
+		.l:checked:after {
+			border-left-color: currentColor;
+			transform: translateX(-2.5%) rotateY(180deg);
+		}
+		/* Other States */
+		.l:focus {
+			/* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+			outline: 0;
+		}
+		/**************************dark mode**********/
+
+		*, *:before, *:after {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body, input {
+			font-size: 1em;
+			line-height: 1.5;
+		}
+		input {
+			display: block;
+			margin-bottom: 1.5em;
+		}
+		#l1 {
+			padding: 1.5em 0 0 0;
+			text-align: center;
+			position: fixed;
+			left: 3%;
+			bottom: 3%;
+		}
+		#l2 {
+			padding: 1.5em 0 0 0;
+			text-align: center;
+			position: fixed;
+			left: 3%;
+			bottom: 13%;
+		}
+		.l {
+			background-color: rgba(0,0,0,0.7);
+			border-radius: 1.75em;
+			box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
+			color: #fdea7b;
+			display: inline-flex;
+			align-items: center;
+			margin: auto;
+			padding: 0.15em;
+			width: 5em;
+			height: 2.5em;
+			transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+		.l:before, .l:after {
+			content: "";
+			display: block;
+		}
+		.l:before {
+			background-color: #d7d7d7;
+			border-radius: 50%;
+			width: 2.2em;
+			height: 2.2em;
+			transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+			z-index: 1;
+		}
+		.l:after {
+			background:
+				linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
+				repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+				radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+			background-repeat: no-repeat;
+			border: 0.25em solid transparent;
+			border-left: 0.4em solid #d8d8d8;
+			border-right: 0 solid transparent;
+			transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+			transform: translateX(-22.5%);
+			transform-origin: 25% 50%;
+			width: 1.8em;
+			height: 1.5em;
+		}
+		}
+		/* Checked */
+		.l:checked {
+			background-color: rgba(0,0,0,0.45);
+			box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+		}
+		.l:checked:before {
+			background-color: currentColor;
+			transform: translateX(125%);
+		}
+		.l:checked:after {
+			border-left-color: currentColor;
+			transform: translateX(-2.5%) rotateY(180deg);
+		}
+		/* Other States */
+		.l:focus {
+			/* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+			outline: 0;
+		}
+		*, *:before, *:after {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body, input {
+			font-size: 1em;
+			line-height: 1.5;
+		}
+		input {
+			display: block;
+			margin-bottom: 1.5em;
+		}
+		.l2 {
+			background-color: rgba(0,0,0,0.7);
+			border-radius: 1.75em;
+			box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
+			color: #32ff7e;
+			display: inline-flex;
+			align-items: center;
+			margin: auto;
+			padding: 0.15em;
+			width: 5em;
+			height: 2.5em;
+			transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+		.l2:before, .l:after {
+			content: "";
+			display: block;
+		}
+		.l2:before {
+			background-color: #D37878;
+			border-radius: 50%;
+			width: 2.2em;
+			height: 2.2em;
+			transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+			z-index: 1;
+		}
+		.l2:after {
+			background:
+				linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
+				repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+				radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+			background-repeat: no-repeat;
+			border: 0.25em solid transparent;
+			border-left: 0.4em solid #d8d8d8;
+			border-right: 0 solid transparent;
+			transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+			transform: translateX(-22.5%);
+			transform-origin: 25% 50%;
+			width: 1.8em;
+			height: 1.5em;
+		}
+		}
+		/* Checked */
+		.l2:checked {
+			background-color: rgba(0,0,0,0.45);
+			box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+		}
+		.l2:checked:before {
+			background-color: currentColor;
+			transform: translateX(125%);
+		}
+		.l2:checked:after {
+			border-left-color: currentColor;
+			transform: translateX(-2.5%) rotateY(180deg);
+		}
+		/* Other States */
+		.l2:focus {
+			/* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+			outline: 0;
+		}
+			#back-to-top-btn{
+					display: none;
+					background: #32ff7e;
+					width: 50px;
+					height: 50px;
+					position: fixed;
+					bottom: 3%;
+					right: 3%;
+					border: none;
+					border-radius: 50%;
+					outline: none;
+					color: white;
+				}
+					#back-to-top-btn:active{
+						background: #000;
+					}
+					.btnEntrance {
+		  animation-duration: 0.5s;
+		  animation-fill-mode: both;
+		  animation-name: btnEntrance;
+		}
+		/* zoomIn */
+		/* @keyframes btnEntrance { 
+		  from {
+		    opacity: 0;
+		    transform: scale3d(0.3, 0.3, 0.3);
+		  }
+		  to {
+		    opacity: 1;
+		  }    
+		} */
+
+		/* fadeInUp */
+		@keyframes btnEntrance {
+		  from {
+		    opacity: 0;
+		    transform: translate3d(0, 100%, 0);
+		  }
+		  to {
+		    opacity: 1;
+		    transform: translate3d(0, 0, 0);
+		  }
+		}
+
+		.btnExit {
+		  animation-duration: 0.25s;
+		  animation-fill-mode: both;  
+		  animation-name: btnExit;
+		}
+		/* zoomOut */
+		/* @keyframes btnExit {
+		  from {
+		    opacity: 1;
+		  }
+		  to {
+		    opacity: 0;
+		    transform: scale3d(0.3, 0.3, 0.3);
+		  }
+		} */
+
+		/* fadeOutDown */
+		@keyframes btnExit {
+		  from {
+		    opacity: 1;
+		  }
+		  to {
+		    opacity: 0;
+		    transform: translate3d(0, 100%, 0);
+		  }
+		}

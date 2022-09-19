@@ -1,0 +1,262 @@
+		.logindiv {
+			height:650px;
+			width: 520px;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			border: 1px solid black;
+			background-color:#181a1b;
+		}
+		#logo {
+			width:350px;
+			height: 200px;
+			position:absolute;
+			top:9%;
+			left:50%;
+			transform: translate(-50%,-50%);
+		}
+		#signin {
+			position:absolute;
+			top:5%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			font-size:150%;
+			font-family: Gerogia;
+			display:none;
+		}
+		.logindiv input[type="text"],.logindiv input[type="password"] {
+			outline:none;
+			background-color:#1e2122;
+			border: 0.5px solid #323638;
+			width:80%;
+			height:50px;
+			padding-left:20px;
+			transition: width 2s;
+			color:white;
+		}
+		.logindiv input[type="text"] {
+			position:absolute;
+			top:60%;
+			left:50%;
+			transform: translate(-50%,-50%);
+		}
+		.logindiv input[type="password"] {
+			position:absolute;
+			top:72%;
+			left:50%;
+			transform: translate(-50%,-50%);
+		}
+		.logindiv input[type="text"]:hover,.logindiv input[type="password"]:hover {
+			background-color:#0b0d0d;
+			outline:2px solid #4d3870;
+			
+		}
+		.logindiv input[type="text"]:focus,.logindiv input[type="password"]:focus {
+			width: 90%;
+			outline:2px solid #4d3870;
+		}
+		::placeholder {
+			font-size:15px;
+			padding-left:20px;
+			transition: padding-left 2s;
+		}
+		input:focus::placeholder {
+			padding-left: 0px;
+		}
+		.logindiv input[type="checkbox"] {
+			size:50%;
+		}
+		#a1 {
+			position: absolute;
+			top:90%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			font-family: Georgia;
+			color:blue;
+			text-decoration: none;
+			text-decoration: italic;
+			font-size: 15px;
+		}
+		#a1:hover {
+			text-decoration: underline;
+		}
+		#hr1 {
+			position: absolute;
+			top:48%;
+			left:27%;
+			transform: translate(-50%,-50%);
+			width:33%;
+			border: 0.5px solid grey;
+		}
+		#or {
+			position: absolute;
+			top:46%;
+			left:49.5%;
+			transform: translate(-50%,-50%);
+			font-family:Georgia;
+			color:grey;
+			font-size: 110%;
+		}
+		#hr2 {
+			position: absolute;
+			top:48%;
+			left:72%;
+			transform: translate(-50%,-50%);
+			width:33%;
+			border: 0.5px solid grey;
+		}
+		#button1 {
+			position: absolute;
+			top:83%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			border:none;
+			background-color:#731313;
+			width:80%;
+			height:40px;
+			color:white;
+			text-shadow: 1px 0px black;
+			transition: 1s background-color;
+		}
+		#button2 {
+			position: absolute;
+			top:42%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			border:none;
+			background-color:#054a73;
+			width:80%;
+			height:40px;
+			transition: 1s background-color;
+		}
+		#facebook {
+			position: absolute;
+			top:25%;
+			left:35%;
+			transform: translate(-50%,-50%);
+			border:none;
+			background-color:#3b5998;
+			width:38px;
+			height:38px;
+			color:white;
+			text-shadow: 1px 0px black;
+			font-size:0;
+		}
+		#fblogo {
+			position:absolute;
+			top:50%;
+			left:49%;
+			transform: translate(-50%,-50%);
+			width:40px;
+			height: 40px;
+		}
+		#gmail {
+			position: absolute;
+			top:25%;
+			left:51%;
+			transform: translate(-50%,-50%);
+			border:none;
+			background-color:#D34836;
+			width:40px;
+			height:40px;
+			color:white;
+			text-shadow: 1px 0px black;
+			font-size: 0;
+			transition: 1s background-color;
+		}
+		#gmaillogo {
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			width:29px;
+			height: 29px;
+		}
+		#twitter {
+			position: absolute;
+			top:25.2%;
+			left:67%;
+			transform: translate(-50%,-50%);
+			border:none;
+			background-color:#48c0eb;
+			width:40px;
+			height:40px;
+			color:white;
+			text-shadow: 1px 0px black;
+			font-size: 0;
+			transition: 1s background-color;
+		}
+		#twitterlogo {
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			width:29px;
+			height: 29px;
+		}
+		#hr3 {
+			position: absolute;
+			top:33%;
+			left:22%;
+			transform: translate(-50%,-50%);
+			width:23%;
+			border: 0.5px solid grey;
+		}
+		#hr4 {
+			position: absolute;
+			top:33%;
+			left:78%;
+			transform: translate(-50%,-50%);
+			width:23%;
+			border: 0.5px solid grey;
+		}
+		#dont {
+			position: absolute;
+			top:32%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			font-family:Georgia;
+			color:grey;
+			font-size: 90%;
+		}
+		#create {
+			text-decoration: none;
+			color:white;
+			text-shadow: 1px 0px black;
+			font-size: 110%;
+		}
+		#button1:hover {
+			background-color:#4c0b0b;
+		}
+		#button2:hover {
+			background-color:#03324e;
+		}
+		#gmail:hover {
+			background-color: #6e251b;
+		}
+		#twitter:hover {
+			background-color: #205669;
+		}
+		.themebuttons
+		{
+			text-decoration: none;
+			color: white;
+			border: 3px solid #32ff7e;
+			border-radius: 60px;
+			padding: 10px 20px;
+			font-style: italic;
+			background: #911fa6a3;
+			width:12%;
+			transition: 2s background-color;
+			transition: 1s color;
+			font-family: Georgia;
+			font-size: 115%;
+		}
+		.themebuttons:hover {
+			background-color : #32ff7e;
+			color:#911fa6a3;
+		}
+		#Dark {
+			text-decoration: line-through;
+		}

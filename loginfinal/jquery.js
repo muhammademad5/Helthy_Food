@@ -1,0 +1,32 @@
+$(document).ready(function(){
+	$("#facebook").mouseenter(function(){
+		$("#fblogo").animate({width:"50px",height:"50px"},{duration:1000,queue:false});
+	});
+});
+$(document).ready(function(){
+	$("#facebook").mouseleave(function(){
+		$("#fblogo").animate({width:"38px",height:"38px"},{duration:1000,queue:false});
+	});
+});
+$(document).ready(function(){
+	$("#gmail").mouseenter(function(){
+		$("#gmaillogo").animate({width:"50px",height:"50px"},{duration:1000,queue:false});
+		$("#gmail").animate({backgroundColor:"#8c180f"},1000);
+	});
+});
+$(document).ready(function(){
+	$("#gmail").mouseleave(function(){
+		$("#gmaillogo").animate({width:"40px",height:"40px"},{duration:1000,queue:false});
+		$("#gmail").animate({backgroundColor:"#D34836"},1000);
+	});
+});
+$(document).ready(function(){
+	$("#twitter").mouseenter(function(){
+		$("#twitterlogo").animate({width:"50px",height:"50px"},{duration:1000,queue:false});
+	});
+});
+$(document).ready(function(){
+	$("#twitter").mouseleave(function(){
+		$("#twitterlogo").animate({width:"29px",height:"29px"},{duration:1000,queue:false});	
+	});
+});

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Healthy Food</title>
+  <link rel="shortcut icon" href="logo.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $("#Button1").click(function(){
+        $("#display,#display2,#display3,#display4").hide();
+        $("#Button1").css("background-color","darkred");
+        $("#Button2").css("background-color","green");
+        $("#Button1").text("Already Hidden");
+        $("#Button2").text("Show Suggestions?");
+        
+    });
+  });
+    $(document).ready(function(){
+    $("#Button2").click(function(){
+        $("#display,#display2").show();
+        $("#Button1").css("background-color","green");
+        $("#Button1").text("Hide Suggestions?");
+        $("#Button2").text("Suggestions Shown");
+        $("#Button2").css("background-color","darkred");
+    });
+  });
+    $(document).ready(function(){
+    $("#Button3").click(function(){
+        $("#display,#display2").toggle();
+        $("#display3,#display4").toggle();
+        $('#Button1').text("Hide Suggestions?");
+        $("#Button").css("background-color","green");
+    });
+  });
+    $(document).ready(function(){
+    $("#displaylogin").click(function(){
+      $("#div1").css("filter","blur(3px)");
+      $("#loginform").css("display","block");
+      });
+  });
+    function closelogin() {
+      document.getElementById("loginform").style.display = "none";
+      document.getElementById("div1").style.filter = "blur(0px)";
+    }
+  </script>
+  <style>
+    .navi {
+      width:100%;
+      height:65px;
+      background-color:orchid;
+      position: fixed;
+      top:0;
+      z-index: 300;
+      box-shadow: 2px 2px 5px darkblue;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+    .navi > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    text-decoration: none;
+    color:orange;
+    padding:22px 30px;
+    float:right;
+    position: sticky;
+  }
+  a:hover {
+    border-bottom: 2px solid red;
+  }
+  .div1 h1,p {
+    padding:20px 15px;
+    color:white;
+    font-family: Georgia;
+  }
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    height: 100px;
+    float:left;
+    margin-left:5px;
+    margin-top:-22px;
+  }
+  body {
+    background-color:#00000b;
+    margin:0px;
+  }
+  .div1 {
+    width:100%;
+    height:1050px;
+    background:url(background.jpg);
+    background-size: 100%;
+  }
+  .sug1 {
+    width:260px;
+    height:320px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background:url(f2.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-color:black;
+    box-shadow: 2px 2px 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  .sug2 {
+    width:260px;
+    height:320px;
+    background-color:black;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background:url(meat2.jpg);
+    background-size:120%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 5px red;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px red;
+  }
+  .sug3 {
+    width:260px;
+    height:320px;
+    background-color:black;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    box-shadow: 2px 2px 5px darkblue;
+    background:url(sea.png);
+    background-size:100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .sug4 {
+    width:260px;
+    height:320px;
+    background-color:black;
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px brown;
+    box-shadow: 2px 2px 5px brown;
+    background:url(bread.png);
+    background-size:100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .sug5 {
+    width:260px;
+    height:320px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background:url(grains.jpg);
+    background-size:140%;
+    background-repeat: no-repeat;
+    background-color:black;
+    box-shadow: 2px 2px 5px brown;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px brown;
+    display:none;
+  }
+  .sug6 {
+    width:260px;
+    height:320px;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background:url(dairy.jpg);
+    background-size:110%;
+    background-repeat: no-repeat;
+    background-color:black;
+    box-shadow: 2px 2px 5px white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    display:none;
+  }
+  .sug7 {
+    width:260px;
+    height:320px;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background:url(choco.png);
+    background-size:120%;
+    background-repeat: no-repeat;
+    background-color:black;
+    box-shadow: 2px 2px 5px black;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px black;
+    display:none;
+  }
+  .sug8 {
+    width:260px;
+    height:320px;
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background:url(nutes.jpg);
+    background-size:130%;
+    background-repeat: no-repeat;
+    background-color:black;
+    box-shadow: 2px 2px 5px brown;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px brown;
+    display:none;
+  }
+  #Button1 {
+    margin-top:80px;
+    margin-left:10px;
+    width:150px;
+    height:50px;
+    background-color:green;
+    box-shadow: 2px 2px 5px darkblue;
+    border:none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding:20px 15px;
+    color:white;
+    font-family: Georgia;
+    color:white;
+  }
+  #Button2 {
+    margin-top:25px;
+    margin-left:10px;
+    width:150px;
+    height:50px;
+    background-color:darkred;
+    box-shadow: 2px 2px 5px darkblue;
+    border:none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color:white;
+    padding:20px 15px;
+    color:white;
+    font-family: Georgia;
+  }
+  #Button3 {
+    margin-top:25px;
+    margin-left:10px;
+    width:150px;
+    background-color:black;
+    height:50px;
+    box-shadow: 2px 2px 5px blue;
+    border:none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color:white;
+    padding:20px 15px;
+    color:white;
+    font-family: Georgia;
+  }
+  .Logform {
+    background-color:white;
+    height:500px;
+    width: 700px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 2px 2px 5px black;
+    border:none;
+    display:none;
+  }
+  .logformleft {
+    float:left;
+    height:500px;
+    width:270px;
+    background-image: url(logoinlogin.jpg);
+    background-size: 123%;
+
+  }
+  #logoinformimage {
+    height:300px;
+    width:500px;
+    position: absolute;
+    top:50%;
+    left:18%;
+    transform: translate(-50%,-50%);
+  }
+  .logformright  {
+    color:black;
+    float:right;
+  }
+  .logformright input[type="text"],.logformright input[type="password"] {
+    border:none;
+    background:transparent;
+    border-bottom: 2px solid grey;
+    width: 100%;
+    outline:none;
+    position:relative;
+    right:70px;
+    top:30px;
+  }
+  .logformright input[type="password"] {
+    margin-bottom: 20px;
+  }
+  .logformright p {
+    color:grey;
+    margin:0px;
+    position: relative;
+    top:45px;
+    right:84px;
+  }
+  .logformright h1 {
+    text-align: center;
+    margin-top:3px;
+    color:green;
+    position:relative;
+    top:30px;
+    right:54px;
+  }
+  #closeform {
+    background-color:darkred;
+    color:white;
+    position: relative;
+    top:120px;
+    right:130px;
+    box-shadow: 1px 1px 1px grey;
+    border:none;
+    height:35px;
+    width:160px;
+  }
+  #signin {
+    background-color:green;
+    color:white;
+    position: relative;
+    top:70px;
+    right:-33px;
+    box-shadow: 1px 1px 1px green;
+    border:none;
+    height:35px;
+    width:160px;
+  }
+</style>
+</head>
+<body id = 'body'>
+  <div class='div1' id='div1'>
+    <nav class="navi">
+    <img src="logo.png" class='logo'>
+    <a href="home.html">Home</a>
+    <button id="displaylogin" onclick="displayfun()">Login</button>
+    </nav>
+    <button id='Button1'>Hide Suggestions?</button>
+    <br>
+    <button id='Button2'>Suggestions Shown</button>
+    <br>
+    <button id='Button3'>More Suggestions?</button>
+    <div class="sug1" id='display'>
+      <h1><b><i>Fruits</i></b></h1>
+      <p><i>Fruits are among the world’s most popular health foods.
+        These sweet foods are very easy to made because they require little to no preparation.
+      like Apples,Pineapples and bananas</i>
+    </div>
+    <div class="sug2" id='display'>
+      <h1><b><i>Meats</i></b></h1>
+      <p><i>Unprocessed, gently cooked meat is one of the most nutritious foods you can eat like,,,
+      Beaf , lamp and Chicken</i></p>
+    </div>
+    <div class="sug3" id='display2'>
+      <h1><b><i>Sea Food</i></b></h1>
+      <p><i>Fish and other seafood tend to be very healthy and nutritious.
+         They’re rich in omega-3 fatty acids, two nutrients in which most people are deficient.Like,
+       Shrimp,Salmon And Sardine</i></p>
+    </div>
+    <div class="sug4" id='display2'>
+      <h1><b><i>Bread</i></b></h1>
+      <p><i>Many people eat a lot of highly processed white bread.
+          For those trying to adopt a healthier diet, it can be extremely 
+          challenging to find healthy breads. Even so, options are available.</i></p>
+    </div>
+    <div class="sug5" id='display3'>
+      <h1><b><i>Grains</i></b></h1>
+      <p><i>Although grains have gotten a bad rap in recent years, some types are very healthy.
+            Just keep in mind that they’re relatively high in carbs, Like, Rice and Oats</i></p>
+    </div>
+    <div class="sug6" id='display3'>
+      <h1><b><i>Dairy</i></b></h1>
+      <p><i>For those who can tolerate them, dairy products are a healthy source of various important nutrients.
+            Full-fat dairy seems to be the best, and studies show that people who eat the most full-fat dairy have a lower risk of obesity and type 2 diabetes (13, 14).</i></p>
+    </div>
+    <div class="sug7" id='display4'>
+      <h1><b><i>Chocolate</i></b></h1>
+      <p><i>Dark chocolate is loaded with magnesium and serves as one of the planet’s most powerful sources of antioxidants (20).</i></p>
+    </div>
+    <div class="sug8" id='display4'>
+      <h1><b><i>Nuts,seeds</i></b></h1>
+      <p><i>Despite being high in fat and calories, nuts and seeds may help you lose weight (3, 4).
+      These foods are crunchy, filling, and loaded with important nutrients that many people don't get enough of, including magnesium and vitamin</i></p>
+    </div>
+    </div>
+  </div>
+  <div class="Logform" id="loginform">
+      <div class="logformleft">
+        <img id=logoinformimage src="logo.png" alt="logo">
+      </div>
+      <div class="logformright">
+        <h1>Login</h1>
+        <p>Username</p>
+        <input type="text" placeholder="Username">
+       <p>Password</p>
+       <input type="password" placeholder="Password">
+       <br><br>
+       <button id="signin">Sign In</button>
+       <button onclick="closelogin()" id="closeform">Close</button>
+     </div>
+  </div>
+  <hr>
+</body>
+</html>
